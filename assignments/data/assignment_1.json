@@ -1,0 +1,62 @@
+{
+    "tasks": {
+        "1": {
+            "unpack_variable": false,
+            "description": "Write a Python function to calculate the sum of a list of numbers.",
+            "variable": [55, 878, 596, 601, 170, 624, 904, 988, 98, 529, 646, 692, 556, 127, 794, 488],
+            "answer": 8746
+        },
+        "2": {
+            "unpack_variable": false,
+            "description": "Write a Python function to convert an Integer to a string in any base.",
+            "variable": 123,
+            "answer": "123"
+        },
+        "3": {
+            "unpack_variable": false,
+            "description": "Write a Python function of to recursively calculate the sum.",
+            "variable": [1, 2, [3, 4], [5, 6]],
+            "answer": 21
+        },
+        "5": {
+            "unpack_variable": false,
+            "description": "Write a Python function to solve the Fibonacci sequence using recursion.",
+            "variable": 100,
+            "answer": 354224848179261915075
+        },
+        "6": {
+            "unpack_variable": false,
+            "description": "Write a Python function to get the sum of a non-negative integer.",
+            "variable": 345,
+            "answer": 12
+        },
+        "11": {
+            "unpack_variable": true,
+            "description": "Write a Python function to find the greatest common divisor (gcd) of two integers.",
+            "variable": [1071, 1029],
+            "answer": 21
+        }
+    },
+    "questions": {
+        "1": {
+            "question": "Explain what a variable is",
+            "answer": "A variable is a name that refers to a value. The variable type is whatever its value is."
+        },
+        "2": {
+            "question": "Explain what a function is",
+            "answer": "A named set of code statements that performs a task"
+        },
+        "3": {
+            "question": "Explain what a program is",
+            "answer": "A Program is a set of instructions of how to perform a task"
+        },
+        "4": {
+            "question": "Explain what makes a program effective",
+            "answer": "The program performs the computation it is meant to do in an clear and efficient manner."
+        },
+        "5": {
+            "question": "Explain what effective programming is",
+            "answer": "Effective programming is: \n-\tGood understanding and use of algorithms, code reuse\n-\tClear intentions and unambiguous code\n-\tProper documentation\n"
+        }
+    }
+}
