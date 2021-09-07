@@ -1,6 +1,11 @@
 from assignments.models.assignment import Assignment
 from assignments.models.functions import *
 
+"""
+Course: Effective Python - Assignment 1
+Student: Andreas Gustafsson
+"""
+
 
 def run_assignment(assignment: Assignment) -> None:
     """Main function for evaluating assignments"""
