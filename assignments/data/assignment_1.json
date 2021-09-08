@@ -1,39 +1,46 @@
 {
     "tasks": {
         "1": {
-            "unpack_variable": false,
             "description": "Write a Python function to calculate the sum of a list of numbers.",
-            "variable": [55, 878, 596, 601, 170, 624, 904, 988, 98, 529, 646, 692, 556, 127, 794, 488],
+            "variable": {
+                "numbers": [55, 878, 596, 601, 170, 624, 904, 988, 98, 529, 646, 692, 556, 127, 794, 488]
+            },
             "answer": 8746
         },
         "2": {
-            "unpack_variable": false,
             "description": "Write a Python function to convert an Integer to a string in any base.",
-            "variable": 123,
+            "variable": {
+                "n": 123
+            },
             "answer": "123"
         },
         "3": {
-            "unpack_variable": false,
             "description": "Write a Python function of to recursively calculate the sum.",
-            "variable": [1, 2, [3, 4], [5, 6]],
+            "variable": {
+                "item": [1, 2, [3, 4], [5, 6]]
+            },
             "answer": 21
         },
         "5": {
-            "unpack_variable": false,
             "description": "Write a Python function to solve the Fibonacci sequence using recursion.",
-            "variable": 100,
+            "variable": {
+                "n": 100
+            },
             "answer": 354224848179261915075
         },
         "6": {
-            "unpack_variable": false,
             "description": "Write a Python function to get the sum of a non-negative integer.",
-            "variable": 345,
+            "variable": {
+                "number": 345
+            },
             "answer": 12
         },
         "11": {
-            "unpack_variable": true,
             "description": "Write a Python function to find the greatest common divisor (gcd) of two integers.",
-            "variable": [1071, 1029],
+            "variable": {
+                "a": 1071,
+                "b": 1029
+            },
             "answer": 21
         }
     },

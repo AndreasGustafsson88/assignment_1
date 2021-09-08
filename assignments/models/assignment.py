@@ -12,7 +12,7 @@ class Assignment:
         self.number = number
         self.deadline = datetime.datetime.strptime(date, '%d-%m-%Y')
         self.assignment = json.load(open(f'assignments/data/assignment_{self.number}.json'))
-        self.tasks = [Task(int(k), v['answer'], v['variable'], v['description'], v['unpack_variable']) for k, v in self.assignment.get('tasks').items()]
+        self.tasks = [Task(int(k), v['answer'], v['variable'], v['description']) for k, v in self.assignment.get('tasks').items()]
         self.questions = self.assignment.get('questions')
 
     def get_task(self, nr) -> Task:
@@ -25,12 +25,12 @@ class Assignment:
 
         for nr, func in func_dict.items():
             task = self.get_task(nr)
+
             print(f' Task nr {task.nr} '.center(30, '='))
             print(f'{task.description}\nVariables: {task.variables}\nAnswer: {task.answer}')
-            if task.unpack_variables:
-                assert func(*task.variables) == task.answer
-            else:
-                assert func(task.variables) == task.answer
+
+            assert func(**task.variables) == task.answer
+
             print('Pass!')
 
     def show_questions(self) -> None:
