@@ -1,15 +1,33 @@
+from dataclasses import dataclass
+from assignments.models.error import WrongAnswer
+from assignments.utils import functions
+
 """
 Main class for tasks
 """
 
 
+@dataclass
 class Task:
+    nr: int
+    answer: int
+    _function: str
+    variables: dict
+    description: str
 
-    def __init__(self, nr: int, answer: str, variable, description: str):
-        self.nr = nr
-        self.answer = answer
-        self.variables = variable
-        self.description = description
+    @property
+    def function(self):
+        """Fetches corresponding function based on function name from function module"""
 
-    def __repr__(self):
-        return '\n'.join(f'{k}: {v}' for k, v in self.__dict__.items())
+        return getattr(functions, self._function)
+
+    def evaluate(self) -> None:
+        """Evaluates answer given by function and correct answer for the task"""
+
+        print(f' Task nr {self.nr} '.center(30, '='))
+        print(f'{self.description}\nVariables: {self.variables}\nAnswer: {self.answer}')
+
+        if not self.function(**self.variables) == self.answer:
+            raise WrongAnswer(self.function(**self.variables), self.answer)
+
+        print('Pass!')

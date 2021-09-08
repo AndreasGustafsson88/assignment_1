@@ -1,6 +1,7 @@
 {
     "tasks": {
         "1": {
+            "function": "sum_list",
             "description": "Write a Python function to calculate the sum of a list of numbers.",
             "variable": {
                 "numbers": [55, 878, 596, 601, 170, 624, 904, 988, 98, 529, 646, 692, 556, 127, 794, 488]
@@ -8,6 +9,7 @@
             "answer": 8746
         },
         "2": {
+            "function": "convert_int",
             "description": "Write a Python function to convert an Integer to a string in any base.",
             "variable": {
                 "n": 123
@@ -15,6 +17,7 @@
             "answer": "123"
         },
         "3": {
+            "function": "recursive_sum",
             "description": "Write a Python function of to recursively calculate the sum.",
             "variable": {
                 "item": [1, 2, [3, 4], [5, 6]]
@@ -22,6 +25,7 @@
             "answer": 21
         },
         "5": {
+            "function": "fibonacci",
             "description": "Write a Python function to solve the Fibonacci sequence using recursion.",
             "variable": {
                 "n": 100
@@ -29,6 +33,7 @@
             "answer": 354224848179261915075
         },
         "6": {
+            "function": "sum_integer",
             "description": "Write a Python function to get the sum of a non-negative integer.",
             "variable": {
                 "number": 345
@@ -36,6 +41,7 @@
             "answer": 12
         },
         "11": {
+            "function": "gcd",
             "description": "Write a Python function to find the greatest common divisor (gcd) of two integers.",
             "variable": {
                 "a": 1071,

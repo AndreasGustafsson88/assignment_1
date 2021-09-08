@@ -1,5 +1,4 @@
 from assignments.models.assignment import Assignment
-from assignments.utils.functions import *
 
 """
 Course: Effective Python - Assignment 1
@@ -10,17 +9,7 @@ Student: Andreas Gustafsson
 def run_assignment(assignment: Assignment) -> None:
     """Main function for evaluating assignments"""
 
-    assignment.assert_tasks(
-        {
-            1: sum_list,
-            2: convert_int,
-            3: recursive_sum,
-            5: fibonacci,
-            6: sum_integer,
-            11: gcd
-        }
-    )
-
+    assignment.assert_tasks()
     assignment.show_questions()
 
     """
