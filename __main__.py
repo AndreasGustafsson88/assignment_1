@@ -13,7 +13,7 @@ def run_assignment(assignment: Assignment) -> None:
     assignment.show_questions()
 
     """
-    Om du vill köra koden eller läsa svar på frågorna i json så klistrar jag in resultatet av show_questions():
+    Om du inte vill köra koden eller läsa svar på frågorna i json så klistrar jag in resultatet av show_questions():
     
     1: Explain what a variable is
      A variable is a name that refers to a value. The variable type is whatever its value is.
