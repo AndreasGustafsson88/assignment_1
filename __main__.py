@@ -1,5 +1,5 @@
 from assignments.models.assignment import Assignment
-from assignments.models.functions import *
+from assignments.utils.functions import *
 
 """
 Course: Effective Python - Assignment 1
