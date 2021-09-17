@@ -1,0 +1,95 @@
+{
+    "tasks": {
+        "1": {
+            "_function": "fibonacci_generator",
+            "description": "Write a generator function that gives you the next number in the Fibonacci sequence.",
+            "variables": {},
+            "answer": [0, 1, 1, 2, 3, 5, 8, 13, 21 ,34]
+        },
+        "2": {
+            "_function": "return_str",
+            "description": "Write a function that takes in a list of strings and returns every character in those strings.",
+            "variables": {
+                "values": ["apple", "pear", "banana", "cherry"]
+            },
+            "answer": [
+                ["a", "p", "p", "l", "e"],
+                ["p", "e", "a", "r"],
+                ["b", "a", "n", "a", "n", "a"],
+                ["c", "h", "e", "r", "r", "y"]
+            ]
+        },
+        "3": {
+            "_function": "repack_dict",
+            "description": "Write a function (that uses reduce) that converts the following dict.",
+            "variables": {
+                "values": {
+                    "john": {
+                        "age": 32,
+                        "favourite_color": "pink"
+                    },
+                    "sarah": {
+                        "age": 22,
+                        "favourite_color": "red"
+                    },
+                    "hannah": {
+                        "age": 19,
+                        "favourite_color": "green"
+                    },
+                    "michael": {
+                        "age": 56,
+                        "favourite_color": "blue"
+                    },
+                    "david": {
+                        "age": 43,
+                        "favourite_color": "yellow"
+                    }
+                }
+            },
+            "answer": [
+                {
+                    "age": 32,
+                    "favourite_color": "pink",
+                    "name": "john"
+                },
+                {
+                    "age": 22,
+                    "favourite_color": "red",
+                    "name": "sarah"
+                },
+                {
+                    "age": 19,
+                    "favourite_color": "green",
+                    "name": "hannah"
+                },
+                {
+                    "age": 56,
+                    "favourite_color": "blue",
+                    "name": "michael"
+                },
+                {
+                    "age": 43,
+                    "favourite_color": "yellow",
+                    "name": "david"
+                }
+            ]
+
+        },
+        "4": {
+            "_function": "get_name",
+            "description": "Write a decorator called lowercased that can be used to turn any result of a function returning a string into lowercase.",
+            "variables": {},
+            "answer": "john doe"
+        },
+        "5": {
+            "_function": "filter_out",
+            "description": "Use a lambda and the built-in function function filter to filter out all numbers greater than 42 in the following list:",
+            "variables": {
+                "values": [60, 91, 38, 13, 18, 34, 15, 74]
+            },
+            "answer": [38, 13, 18, 34 ,15]
+        }
+    },
+        "questions": {
+    }
+}

@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from assignments.models.error import WrongAnswer
-from assignments.utils import functions
+from assignments import utils
 
 """
 Main class for tasks
@@ -19,7 +19,7 @@ class Task:
     def function(self):
         """Fetches corresponding function based on function name from function module"""
 
-        return getattr(functions, self._function)
+        return getattr(utils, self._function)
 
     def evaluate(self) -> None:
         """Evaluates answer given by function and correct answer for the task"""

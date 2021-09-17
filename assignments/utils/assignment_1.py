@@ -1,8 +1,8 @@
-"""
-Functions for running the assignment.
-"""
-
 from functools import lru_cache
+
+"""
+Functions for running the assignments
+"""
 
 
 def sum_list(numbers: list) -> int:

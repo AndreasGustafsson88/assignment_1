@@ -37,3 +37,5 @@ def run_assignment(assignment: Assignment) -> None:
 if __name__ == "__main__":
     assignment_1 = Assignment(1, '13-09-2021')
     run_assignment(assignment_1)
+    assignment_2 = Assignment(2, '07-10-2021')
+    run_assignment(assignment_2)

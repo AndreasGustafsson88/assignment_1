@@ -12,7 +12,7 @@ class Assignment:
         self.number = number
         self.deadline = datetime.datetime.strptime(date, '%d-%m-%Y')
         self.assignment = json.load(open(f'assignments/data/assignment_{self.number}.json'))
-        self.tasks = [Task(int(k), v['answer'], v['function'], v['variable'], v['description']) for k, v in self.assignment.get('tasks').items()]
+        self.tasks = [Task(int(k), **v) for k, v in self.assignment.get('tasks').items()]
         self.questions = self.assignment.get('questions')
 
     def assert_tasks(self) -> None:
