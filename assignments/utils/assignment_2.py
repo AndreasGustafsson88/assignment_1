@@ -10,16 +10,13 @@ Functions needed for running assignment 2
 # ---- NOT PART OF ASSIGNMENT! -----
 def run_10_time(func):
     """Only for task evaluation, creates and runs iterator 10 times"""
+    gen = func()
 
-    def wrapper():
-        gen = func()
-        return [next(gen) for _ in range(10)]
-
-    return wrapper
+    return lambda: [next(gen) for _ in range(10)]
 
 
 def timer(nr_lapses: int):
-    """runs finction n nr of times and times each iteration, returns average time for each iteration"""
+    """runs function n nr of times and times each iteration, returns average time for each iteration"""
 
     def timer_decorator(func):
         def wrapper(*args, **kwargs):
@@ -77,20 +74,17 @@ def repack_dict(values: dict) -> list[dict]:  # === 3 ===
 
 
 def lowercase(func):  # === 4 ===
-    """Wrapper function to convert result given my func to lowercase"""
+    """Decorator function to convert result given func to lowercase"""
 
-    def wrapper(*args, **kwargs):
-        return func(*args, **kwargs).lower()
-
-    return wrapper
+    return lambda *args, **kwargs: func(*args, **kwargs).lower()
 
 
 def tired(_func=None, seconds: int = 5):  # === 5 ===
     """
-    Wrapper to make system sleep for n number of seconds.
+    Decorator to make system sleep for n number of seconds.
 
     This solution needs the arg to be given with kw. E.g seconds=2.
-    But also leaves the option to leave decorator blank and default to chosen default value.
+    But also leaves the option to leave decorator blank and defaults to chosen default value.
     """
 
     def tired_decorator(func):
